@@ -1,6 +1,13 @@
+// Obtenemos le url
+let url = window.location.href;
+let swLocation = '/twittor/sw.js';
+
 // Iniciamos el service worker
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+    if (url.includes('localhost')) {
+        swLocation = '/sw.js';
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 
 

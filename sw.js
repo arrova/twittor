@@ -7,7 +7,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 // Corazón de la aplicación
 const APP_SHELL = [
-    '/',
+    // '/', // Para producción no lo necesitamos
     'index.html',
     'css/style.css',
     'img/favicon.ico',
